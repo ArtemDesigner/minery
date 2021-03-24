@@ -31,11 +31,19 @@
 
             &:last-child {
                 border-bottom: none;
+                height: 60px;
             }
         }
 
         td {
             text-align: center;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #100F0F;
+            font-weight: 700;
+            text-align: right;
         }
     }
 
