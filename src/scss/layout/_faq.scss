@@ -1,0 +1,107 @@
+.faq {
+    background: none;
+
+    h2 {
+        margin-bottom: 52px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        background-color: $white;
+        color: #100F0F;
+        cursor: pointer;
+        padding: 30px;
+        width: 100%;
+        border: 1px solid $green-dark;
+        text-align: left;
+        outline: none;
+        font-size: 24px;
+        font-weight: 700;
+        transition: $animation-speed;
+        border-radius: 11px;
+        position: relative;
+    }
+
+    .accordion {
+        padding-right: 85px;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            background: #C4C4C4;
+            transition: $animation-speed;
+        }
+
+        &::after {
+            width: 3px;
+            height: 29px;
+            right: 41px;
+            top: 28px;
+        }
+
+        &::before {
+            width: 29px;
+            height: 3px;
+            right: 28px;
+            top: 41px;
+        }
+    }
+
+    .panel {
+        padding: 0 136px 0 76px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        font-size: 18px;
+        line-height: 22px;
+        border-radius: 11px;
+
+        p {
+            margin-bottom: 28px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .active {
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        &::after,
+        &::before {
+            background: $green-dark;
+            transform: rotate(45deg);
+        }
+
+        &+.panel {
+            border: 1px solid $green-dark;
+            border-top: none;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding: 0 136px 46px 76px;
+        }
+    }
+}
+
+.faq-form {
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -270px;
+        height: 100%;
+        width: 100%;
+        background: url('../../images/faq-contact-form-bg.svg') no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        z-index: -1;
+    }
+}

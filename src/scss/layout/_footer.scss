@@ -1,0 +1,95 @@
+.footer {
+    background: $footer-bg;
+    min-height: 265px;
+    color: $white;
+
+    a {
+        color: $white;
+        font-size: 16px;
+    }
+
+    .logo {
+        display: block;
+        margin-bottom: 13px;
+    }
+
+    span {
+        display: block;
+        font-size: 14px;
+        color: #BBB6D0;
+        margin-bottom: 16px;
+    }
+
+    .social {
+        @extend %listreset;
+        display: flex;
+
+        a {
+            padding: 0 12px;
+        }
+    }
+
+    .icon {
+        color: $white;
+    }
+
+    h6 {
+        margin-bottom: 17px;
+    }
+
+    ul {
+        li {
+            line-height: 25px;
+        }
+    }
+
+    .list {
+        @extend %listreset;
+    }
+
+    .list-service {
+        padding-left: 96px;
+    }
+
+    .list-faq {
+        padding-left: 52px;
+    }
+}
+
+.footer-inner {
+    padding-top: 88px;
+}
+
+.footer-form {
+
+    .row {
+        position: relative;
+    }
+
+    input[type="email"] {
+        width: 400px;
+        font-size: 16px;
+        height: 46px;
+        border-radius: 60px 174px 174px 60px;
+        background: #313143;
+        border-color: transparent;
+        outline: transparent;
+        padding-left: 26px;
+        padding-right: 186px;
+
+        &::placeholder {
+            color: $white;
+            font-size: 16px;
+        }
+    }
+
+    input[type="submit"] {
+        position: absolute;
+        right: 0;
+        padding: 14px 38px;
+        font-size: 14px;
+        border-radius: 174px;
+        border: none;
+        font-weight: 700;
+    }
+}

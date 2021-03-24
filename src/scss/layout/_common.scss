@@ -1,0 +1,20 @@
+.body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+}
+
+.icon {
+    font-family: 'icomoon';
+}
+
+.green-light {
+    background: $green-light;
+}
+
+p {
+    color: $gray;
+}

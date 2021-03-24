@@ -1,0 +1,106 @@
+.shop {
+    padding-bottom: 120px;
+    background: url(../../images/shop-bg.svg) no-repeat;
+    background-size: contain;
+    background-position: 0 22vw;
+
+
+    h2 {
+        padding-top: 100px;
+        margin-bottom: 48px;
+    }
+
+    .item {
+        background: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        border: 1px solid $green-dark;
+        border-radius: 11px;
+        padding: 29px 32px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    img {
+        margin-bottom: 14px;
+    }
+
+    strong {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    span {
+        margin-bottom: 16px;
+    }
+
+    .price {
+        font-size: 32px;
+        margin-bottom: 26px;
+    }
+
+    .btn {
+        padding: 16px 0px;
+        width: 100%;
+        outline: transparent;
+        border: transparent;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .btn-add {
+        width: 24px;
+        height: 29px;
+        position: absolute;
+        top: 26px;
+        right: 28px;
+        background: url(../../images/shop-btn-add.svg) no-repeat;
+        background-size: contain;
+        outline: transparent;
+        border: transparent;
+    }
+
+    .compare {
+        width: 69px;
+        height: 84px;
+        background-color: $green-dark;
+        position: fixed;
+        right: 0;
+        top: 60vh;
+        outline: none;
+        border: none;
+        border-top-left-radius: 11px;
+        border-bottom-left-radius: 11px;
+
+        .background {
+            background: url('../../images/btn-compare-bg.svg') no-repeat;
+            background-size: contain;
+            background-position: 0 0;
+            position: absolute;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20%;
+            width: 31px;
+            height: 37px;
+            z-index: 2;
+        }
+
+        .number {
+            display: block;
+            width: 17px;
+            height: 17px;
+            content: '';
+            background: $white;
+            border-radius: 50%;
+            font-size: 12px;
+            line-height: 15px;
+            position: absolute;
+            top: 20%;
+            right: 15%;
+        }
+    }
+}

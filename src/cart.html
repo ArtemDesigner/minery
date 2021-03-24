@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    //= layout/head.html
+</head>
+
+<body>
+    <div id="wrapper">
+        //= layout/header.html
+        <main>
+            <div class="cart">
+                <div class="container">
+                    <h2>Cart</h2>
+                    <div class="row-holder">
+                        <div class="col-1"></div>
+                        <div class="col-9">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="name">Product</th>
+                                        <th class="quantity">Quantity</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="product">
+                                                <img src="images/cart.jpg" alt="image description">
+                                                Bitmain Antminer S17+
+                                                70TH/s
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="quantity-block">
+                                                <button class="quantity-arrow-minus"> - </button>
+                                                <input class="quantity-num" type="number" value="1" />
+                                                <button class="quantity-arrow-plus"> + </button>
+                                            </div>
+                                            <button class="delete">Delete</button>
+                                        </td>
+                                        <td>$2, 150</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product">
+                                                <img src="images/cart.jpg" alt="image description">
+                                                Bitmain Antminer S17+
+                                                70TH/s
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="quantity-block">
+                                                <button class="quantity-arrow-minus"> - </button>
+                                                <input class="quantity-num" type="number" value="1" />
+                                                <button class="quantity-arrow-plus"> + </button>
+                                            </div>
+                                            <button class="delete">Delete</button>
+                                        </td>
+                                        <td>$2, 150</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        //= layout/footer.html
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

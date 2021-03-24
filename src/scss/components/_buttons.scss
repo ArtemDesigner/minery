@@ -1,0 +1,35 @@
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	background: $green-dark;
+	color: $white;
+	transition: color $animation-speed ease-in-out,
+		background $animation-speed ease-in-out,
+		border $animation-speed ease-in-out;
+	border-radius: 54px;
+	font-weight: 700;
+
+	&:hover,
+	&:focus {
+		background: linear-gradient(91.32deg, #35B2F8 13.16%, #0C8ADC 96.44%);
+	}
+
+	&-light {
+		display: inline-block;
+		background: $white;
+		border: 3px solid $green-dark;
+		color: #000;
+		border-radius: 174px;
+		font-weight: 700;
+		transition: color $animation-speed ease-in-out,
+			background $animation-speed ease-in-out,
+			border $animation-speed ease-in-out;
+
+		&:hover,
+		&:focus {
+			background: linear-gradient(91.32deg, #35B2F8 13.16%, #0C8ADC 96.44%);
+			border: 3px solid transparent;
+			color: $white;
+		}
+	}
+}

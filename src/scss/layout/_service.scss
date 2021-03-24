@@ -1,0 +1,39 @@
+.faq {
+    margin-top: 110px;
+    padding-bottom: 153px;
+    background: url(../../images/service-bg.svg) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+
+    .item-holder {
+        padding-bottom: 0;
+    }
+}
+
+.faq-form {
+    background: $yellow;
+    color: #161515;
+    padding-top: 0;
+
+    &::before {
+        background: none;
+    }
+
+    input:not(input[type="submit"]) {
+        background: transparent;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid #727272;
+        width: 100%;
+        outline: transparent;
+
+        &::placeholder {
+            color: $gray;
+        }
+    }
+
+    span {
+        color: $gray;
+    }
+}
