@@ -16,22 +16,37 @@
 <body>
     <div id="wrapper">
         <header class="header">
-            <div class="row-holder">
-                <div class="header-inner">
-                    <div class="left">
-                        <div class="burger" id="burger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <nav class="navigation" id="headerNav">
-                            <ul class="menu">
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Iron shop</a></li>
-                                <li><a href="#">About company</a></li>
-                                <li><a href="#">About blockhain</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Blog</a></li>
+            <div class="header-inner">
+                <div class="left">
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="navigation" id="headerNav">
+                        <ul class="menu">
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Iron shop</a></li>
+                            <li><a href="#">About company</a></li>
+                            <li><a href="#">About blockchain</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                        <ul class="header-social desktop-less-hide">
+                            <li><a href="#">
+                                    <i class="icon-social-facebook icon"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="icon-social-medium icon"></i>
+                                </a></li>
+                        </ul>
+                        <div class="list-holder desktop-hide">
+                            <ul class="language">
+                                <li class="has-drop" id="language-drop"><a>EN</a>
+                                    <ul>
+                                        <li><a href="#">RU</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <ul class="header-social">
                                 <li><a href="#">
@@ -41,23 +56,26 @@
                                         <i class="icon-social-medium icon"></i>
                                     </a></li>
                             </ul>
-                        </nav>
-                        <a class="logo" href="#">
-                            <img src="/images/logo.svg" alt="Minery">
-                        </a>
-                    </div>
-                    <div class="right">
-                        <a href="#">SIGN IN</a>
-                        <a href="#" class="btn">SIGN UP</a>
-                        <ul class="language">
-                            <li class="has-drop" id="language-drop"><a>EN</a>
-                                <ul>
-                                    <li><a href="#">RU</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <a class="shop-cart" href="#"></a>
-                    </div>
+                        </div>
+                    </nav>
+                    <a class="logo" href="#">
+                        <img src="/images/logo.svg" alt="Minery">
+                    </a>
+                </div>
+                <div class="right">
+                    <a class="desktop-less-hide" id='signInBtn' href="#">SIGN IN</a>
+                    <a class="desktop-less-hide btn" id='signUpBtn' href="#">SIGN UP</a>
+                    <a class="desktop-hide signInMob" href="#">
+                        <i class="icon-signInMob"></i>
+                    </a>
+                    <ul class="language desktop-less-hide">
+                        <li class="has-drop" id="language-drop"><a>EN</a>
+                            <ul>
+                                <li><a href="#">RU</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="shop-cart" href="#"></a>
                 </div>
             </div>
         </header>
@@ -65,6 +83,8 @@
             <div class="container">
                 <div class="row-holder">
                     <div class="col-5">
+                        <h2 class="tablet-upper-hide">Bitmain Antminer S17+ 70TH/s</h2>
+                        <span class="description tablet-upper-hide">with PSU</span>
                         <img class="image-main" src="images/shop-details.jpg" alt="image description">
                         <div class="image-list">
                             <img class="image-item active" src="images/shop-details.jpg" alt="image description">
@@ -74,8 +94,8 @@
                         </div>
                     </div>
                     <div class="col-7 content">
-                        <h2>Bitmain Antminer S17+ 70TH/s</h2>
-                        <span class="description">with PSU</span>
+                        <h2 class="tablet-hide">Bitmain Antminer S17+ 70TH/s</h2>
+                        <span class="description tablet-hide">with PSU</span>
                         <table>
                             <tr>
                                 <td>Product model</td>
@@ -94,7 +114,7 @@
                                 <td>11.5</td>
                             </tr>
                             <tr>
-                                <td>Size(Length*Width*Height)</td>
+                                <td>Size (L*W*H)</td>
                                 <td>298.2*178*304.3</td>
                             </tr>
                             <tr>
@@ -113,13 +133,13 @@
         </main>
         <footer class="footer">
             <div class="container footer-inner">
-                <div class="row-holder">
+                <div class="row-holder footer-holder">
                     <div class="col-2">
                         <a class="logo" href="#">
-                            <img src="/images/logo.svg" alt="Minery">
+                            <img src="/images/logo-footer.svg" alt="Minery">
                         </a>
-                        <span>&copy; 2021 Minery</span>
-                        <ul class="social">
+                        <span class="lg-hide">&copy; 2021 Minery</span>
+                        <ul class="social lg-hide">
                             <li><a href="#"><i class="icon-social-facebook icon"></i></a></li>
                             <li><a href="#"><i class="icon-social-medium icon"></i></a></li>
                         </ul>
@@ -129,7 +149,7 @@
                             <li><a href="#">Service</a></li>
                             <li><a href="#">Iron shop</a></li>
                             <li><a href="#">About company</a></li>
-                            <li><a href="#">About blockhain</a></li>
+                            <li><a href="#">About blockchain</a></li>
                         </ul>
                     </div>
                     <div class="col-3">
@@ -147,6 +167,7 @@
                                 <input class="btn" type="submit" value="SUBSCRIBE">
                             </div>
                         </form>
+                        <span class="lg-upper-hide">&copy; 2021 Minery</span>
                     </div>
                 </div>
             </div>

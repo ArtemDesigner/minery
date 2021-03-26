@@ -1,19 +1,43 @@
 .blog {
-    padding-bottom: 95px;
+    padding-bottom: 74px;
     padding-top: 110px;
     background: url('../../images/blog-bg.svg') no-repeat;
     background-size: contain;
     background-position: 0 35vw;
 
+    @include media('<desktop') {
+        padding-top: 42px;
+    }
 
     h2 {
-        padding-bottom: 47px;
+        padding-bottom: 20px;
+
+        @include media('<desktop') {
+            padding-bottom: 5px;
+        }
+    }
+
+    h3 {
+        margin-bottom: 28px;
+    }
+
+    h3,
+    h4 {
+        @include media('<desktop') {
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
     }
 
     .item {
         border-radius: 10px;
         background: $white;
         margin-bottom: 20px;
+
+        @include media('<tablet') {
+            max-width: 400px;
+            margin: 0 auto 20px;
+        }
     }
 
     img {
@@ -22,20 +46,39 @@
     }
 
     .content {
-        padding: 20px 25px;
+        padding: 25px 25px 20px;
         border: 1px solid $green-dark;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top: none;
         max-height: 100%;
+
+        @include media('<desktop') {
+            padding: 12px 12px;
+        }
     }
 
     .content-lg {
         min-height: 268px;
+
+        @include media('<desktop') {
+            min-height: 135px;
+        }
     }
 
     .content-md {
         min-height: 132px;
+        padding: 30px 20px;
+
+        @include media('<desktop') {
+            min-height: 115px;
+            padding: 20px;
+        }
+
+        @include media('<tablet') {
+            min-height: 60px;
+            padding: 14px;
+        }
     }
 
     p {

@@ -20,6 +20,7 @@ $media-expressions: ('screen': 'screen',
 @import 'vendors/include-media';
 @import 'vendors/normalize';
 @import 'vendors/icomoon';
+@import 'vendors/swiper-bundle.min';
 
 @import 'base/variables';
 @import 'base/functions';
@@ -45,6 +46,10 @@ $media-expressions: ('screen': 'screen',
 @import 'layout/blog-detail';
 @import 'layout/cart';
 @import 'layout/cart-order';
+@import 'layout/signin';
+@import 'layout/signup';
+@import 'layout/shop-comparison';
+@import 'layout/blockhain';
 
 @import 'components/buttons';
 

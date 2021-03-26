@@ -22,6 +22,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-signInMob:before {
+    content: "\e90c";
+}
+
 .icon-services-asic:before {
     content: "\e906";
     color: #00cc06;

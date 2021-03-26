@@ -1,0 +1,140 @@
+.modal {
+    padding-top: 57px;
+
+    @include media ('<desktop') {
+        padding-top: 0;
+    }
+}
+
+.modal-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 75px 0 208px;
+    width: 100%;
+    max-width: 816px;
+    border-radius: 11px;
+    position: relative;
+
+    @include media ('<desktop') {
+        padding-top: 50px;
+        padding-bottom: 115px;
+    }
+
+    h3 {
+        @include media ('<tablet') {
+            text-align: center;
+        }
+    }
+
+    .logo {
+        margin-bottom: 30px;
+
+        img {
+            height: inherit;
+            width: inherit;
+            margin-right: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 40px;
+
+        @include media ('<desktop') {
+            margin-bottom: 34px;
+        }
+
+        a {
+            color: $gray;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .reset {
+        font-size: 14px;
+        margin-bottom: 33px;
+        text-align: right;
+
+        @include media ('<desktop') {
+            margin-bottom: 28px;
+        }
+    }
+
+    .btn {
+        outline: transparent;
+        border: transparent;
+        border-radius: 174px;
+        margin-bottom: 0;
+        padding: 17px;
+        letter-spacing: 0.065em;
+    }
+}
+
+.form-sign {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+
+    .text {
+        margin-bottom: 50px;
+
+        @include media ('<desktop') {
+            margin-bottom: 23px;
+        }
+    }
+
+    .row {
+        width: 100%;
+        position: relative;
+        margin-bottom: 22px;
+
+        @include media ('<desktop') {
+            margin-bottom: 18px;
+        }
+    }
+
+    input {
+        width: 100%;
+        color: $gray;
+        border: none;
+        border-bottom: 1px solid #727272;
+        outline: transparent;
+        padding: 10px 7px;
+
+        &[type='password'] {
+            margin-bottom: 0;
+        }
+    }
+
+    input[type='submit'] {
+        color: $white;
+    }
+
+    .password-active {
+        &::after {
+            background: url('../../images/password-show.svg') no-repeat;
+        }
+    }
+
+    .eye {
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: contain;
+        background: url('../../images/password-hide.svg') no-repeat;
+    }
+
+    .eye-show {
+        background: url('../../images/password-show.svg') no-repeat;
+    }
+}

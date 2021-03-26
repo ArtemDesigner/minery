@@ -19,6 +19,10 @@ body {
   min-width: $base-min-width;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include media('<desktop') {
+    font: #{$font-size-base-md}/#{$line-height-base-md} $base-font-family;
+  }
 }
 
 a {

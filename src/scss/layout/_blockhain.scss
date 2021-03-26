@@ -1,0 +1,92 @@
+.blockchain {
+    padding-top: 100px;
+    background: url('../../images/about-blockhain-bg.svg') no-repeat;
+    background-size: contain;
+    background-position: 0 -5vw;
+
+    .content-wrapper {
+        background: url('../../images/about-blockhain-content-bg.svg') no-repeat;
+        background-size: contain;
+        background-position: 0 40vw;
+    }
+
+    .about-holder {
+        padding-bottom: 72px;
+    }
+
+    .about {
+        h2 {
+            margin-bottom: 55px;
+        }
+    }
+
+    h2 {
+        max-width: 550px;
+    }
+
+    h4 {
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 26px;
+        max-width: 510px;
+    }
+
+    .cryptocurrencies-holder {
+        margin-bottom: 135px;
+
+        h2 {
+            margin-bottom: 38px;
+        }
+
+        p {
+            margin-bottom: 75px;
+            max-width: 45%;
+        }
+    }
+
+    .mining {
+        margin-bottom: 93px;
+
+        h2 {
+            margin-bottom: 48px;
+        }
+    }
+
+    .contract {
+        margin-bottom: 72px;
+    }
+
+}
+
+.blockchain-form {
+    padding-top: 45px;
+}
+
+.crypto-list {
+    .item {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding-bottom: 84px;
+
+        span {
+            color: #737373;
+        }
+    }
+
+    img {
+        max-width: 100px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+.swiper-container-horizontal>.swiper-scrollbar {
+    height: 3px;
+}
+
+.swiper-scrollbar-drag {
+    background: $green-dark;
+}

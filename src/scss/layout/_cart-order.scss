@@ -1,0 +1,243 @@
+.wrapper {
+    &::before {
+        position: absolute;
+        content: '';
+        width: 56.5%;
+        height: 125%;
+        left: 0;
+        top: 0;
+        background: #f5f5f5;
+        z-index: -1;
+
+        @include media('<tablet') {
+            background: none;
+        }
+
+    }
+}
+
+.cart-order {
+    padding-top: 113px;
+    padding-bottom: 87px;
+
+    @include media('<desktop') {
+        padding-top: 40px;
+        padding-bottom: 58px;
+    }
+
+    h2 {
+        margin-bottom: 62px;
+
+        @include media('<desktop') {
+            margin-bottom: 20px;
+        }
+    }
+
+    h4 {
+        margin-bottom: 35px;
+
+        @include media('<tablet') {
+            margin-bottom: 10px;
+        }
+    }
+
+    .payment-title {
+        margin-bottom: 42px;
+
+        @include media('<tablet') {
+            margin-bottom: 18px;
+        }
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 37px;
+
+        @include media('<tablet') {
+            margin-bottom: 15px;
+        }
+    }
+
+    td {
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    tr {
+        height: 36px;
+
+        @include media('<tablet') {
+            border-bottom: 1px solid #C4C4C4;
+            height: 55px;
+        }
+
+        &:nth-last-child(2) {
+            height: 18px;
+        }
+
+        &:last-child {
+            border-top: 1px solid #C4C4C4;
+            border-bottom: none;
+            vertical-align: bottom;
+            height: 48px;
+        }
+    }
+
+    .price {
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .row {
+        display: flex;
+        justify-content: flex-end;
+
+        @include media('<tablet') {
+            justify-content: flex-start;
+        }
+    }
+
+    .prev-page {
+        font-size: 20px;
+        color: $green-dark;
+        font-weight: 700;
+        text-align: right;
+
+        @include media('<tablet') {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.order-content {
+    padding-left: 52px;
+
+    @include media('<tablet') {
+        padding-left: 10px;
+        order: -1;
+    }
+
+    h4 {
+        margin-bottom: 27px;
+
+        @include media('<desktop') {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.form-place-order {
+    .contact-info {
+        margin-bottom: 30px;
+        color: $gray;
+
+        @include media('<tablet') {
+            margin-bottom: 18px;
+        }
+
+        &::placeholder {
+            color: $gray;
+        }
+
+        input {
+            background: #f5f5f5;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #727272;
+            outline: transparent;
+            margin-bottom: 28px;
+            padding-left: 10px;
+
+            @include media('<tablet') {
+                background: $white;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .method-list {
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: space-between;
+
+        @include media('<tablet') {
+            flex-direction: column;
+            margin-bottom: 22px;
+        }
+    }
+
+    .btn {
+        outline: transparent;
+        border: transparent;
+        border-radius: 174px;
+        padding: 18px 99px;
+        letter-spacing: 0.065em;
+
+        @include media('<tablet') {
+            padding: 14px 0;
+            width: 100%;
+        }
+    }
+
+    label {
+        @include media('<tablet') {
+            margin-bottom: 12px;
+        }
+    }
+
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: $gray;
+    }
+
+    [type="radio"]:checked+label:before,
+    [type="radio"]:not(:checked)+label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $green-dark;
+        border-radius: 100%;
+        background: $white;
+    }
+
+    [type="radio"]:checked+label:after,
+    [type="radio"]:not(:checked)+label:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: $green-dark;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 100%;
+        -webkit-transition: all $animation-speed ease;
+        transition: all $animation-speed ease;
+    }
+
+    [type="radio"]:not(:checked)+label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    [type="radio"]:checked+label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

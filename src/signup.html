@@ -1,0 +1,42 @@
+    <!doctype html>
+    <html lang="en">
+
+    <head>
+        //= layout/head.html
+    </head>
+
+    <body>
+        <div id="wrapper">
+            //= layout/header.html
+            <main class="main">
+                <div class="container">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <a class="logo desktop-less-hide" href="#">
+                                <img src="/images/logo-lg.svg" alt="Minery">
+                            </a>
+                            <h3>Sign up</h3>
+                            <p>Already registered? <a href="#">Sign in</a></p>
+                            <form class="form-sign" action="#">
+                                <input class="text" type="email" placeholder="E-mail">
+                                <div class="row">
+                                    <div class="eye"></div>
+                                    <input class="password" type="password" placeholder="Password">
+                                </div>
+                                <label class="checkbox-wrapper">
+                                    I have read and agree to the Terms of Service.
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <input class="btn" type="submit" value="SIGN UP">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            //= layout/footer.html
+        </div>
+        <script src="js/main.min.js"></script>
+    </body>
+
+    </html>

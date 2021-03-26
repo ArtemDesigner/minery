@@ -6,10 +6,8 @@ click.addEventListener("click", function () {
   headerNav.classList.toggle("menu-active");
 });
 
-var language = document.getElementById("language-drop");
-
-language.addEventListener("click", function () {
-  language.classList.toggle("active");
+$("#language-drop").on("click", function () {
+  $(this).toggleClass("active");
 });
 
 var acc = document.getElementsByClassName("accordion");
@@ -26,6 +24,8 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// C A R T + and -
 
 // $(function () {
 //   (function quantityProducts() {
@@ -47,3 +47,60 @@ for (i = 0; i < acc.length; i++) {
 //     }
 //   })();
 // });
+
+// MODAL shop compare
+$("#compareModal").css("display", "block");
+
+$("#compareBtn").on("click", function () {
+  $("#compareModal").css("display", "block");
+});
+$(".close").on("click", function () {
+  $("#compareModal").css("display", "none");
+});
+$("#compareModal").on("click", function (event) {
+  if (event.target == this) {
+    $(this).css("display", "none");
+  }
+});
+
+// show-hide password
+$(".eye").on("click", function () {
+  $(this).toggleClass("eye-show");
+
+  var input = $($(".password"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+new Swiper(".swiper-container", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 5,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+new Swiper("#swiper-service", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 2,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1240: {
+      slidesPerView: 3,
+    },
+  },
+});

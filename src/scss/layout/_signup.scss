@@ -1,0 +1,55 @@
+.form-sign {
+    .checkbox-wrapper {
+        display: block;
+        position: relative;
+        padding-left: 29px;
+        padding-bottom: 25px;
+        cursor: pointer;
+        font-size: 16px;
+        user-select: none;
+        color: $gray;
+    }
+
+    .checkbox-wrapper input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 17px;
+        width: 17px;
+        background-color: $white;
+        border: 1px solid $green-dark;
+        border-radius: 2px;
+    }
+
+
+    .container input:checked~.checkmark {
+        background-color: #2196F3;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .checkbox-wrapper input:checked~.checkmark:after {
+        display: block;
+    }
+
+    .checkbox-wrapper .checkmark:after {
+        left: 2px;
+        top: 2px;
+        width: 11px;
+        height: 11px;
+        background: $green-dark;
+        border-radius: 2px;
+    }
+}

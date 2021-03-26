@@ -16,22 +16,37 @@
 <body>
     <div id="wrapper">
         <header class="header">
-            <div class="row-holder">
-                <div class="header-inner">
-                    <div class="left">
-                        <div class="burger" id="burger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <nav class="navigation" id="headerNav">
-                            <ul class="menu">
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Iron shop</a></li>
-                                <li><a href="#">About company</a></li>
-                                <li><a href="#">About blockhain</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Blog</a></li>
+            <div class="header-inner">
+                <div class="left">
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="navigation" id="headerNav">
+                        <ul class="menu">
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Iron shop</a></li>
+                            <li><a href="#">About company</a></li>
+                            <li><a href="#">About blockchain</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                        <ul class="header-social desktop-less-hide">
+                            <li><a href="#">
+                                    <i class="icon-social-facebook icon"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="icon-social-medium icon"></i>
+                                </a></li>
+                        </ul>
+                        <div class="list-holder desktop-hide">
+                            <ul class="language">
+                                <li class="has-drop" id="language-drop"><a>EN</a>
+                                    <ul>
+                                        <li><a href="#">RU</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <ul class="header-social">
                                 <li><a href="#">
@@ -41,23 +56,26 @@
                                         <i class="icon-social-medium icon"></i>
                                     </a></li>
                             </ul>
-                        </nav>
-                        <a class="logo" href="#">
-                            <img src="/images/logo.svg" alt="Minery">
-                        </a>
-                    </div>
-                    <div class="right">
-                        <a href="#">SIGN IN</a>
-                        <a href="#" class="btn">SIGN UP</a>
-                        <ul class="language">
-                            <li class="has-drop" id="language-drop"><a>EN</a>
-                                <ul>
-                                    <li><a href="#">RU</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <a class="shop-cart" href="#"></a>
-                    </div>
+                        </div>
+                    </nav>
+                    <a class="logo" href="#">
+                        <img src="/images/logo.svg" alt="Minery">
+                    </a>
+                </div>
+                <div class="right">
+                    <a class="desktop-less-hide" id='signInBtn' href="#">SIGN IN</a>
+                    <a class="desktop-less-hide btn" id='signUpBtn' href="#">SIGN UP</a>
+                    <a class="desktop-hide signInMob" href="#">
+                        <i class="icon-signInMob"></i>
+                    </a>
+                    <ul class="language desktop-less-hide">
+                        <li class="has-drop" id="language-drop"><a>EN</a>
+                            <ul>
+                                <li><a href="#">RU</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="shop-cart" href="#"></a>
                 </div>
             </div>
         </header>
@@ -67,58 +85,118 @@
                     <h2>Our service</h2>
                     <div class="row-holder item-holder">
                         <div class="col-4">
-                            <div class="item">
-                                <i class="icon-services-asic icon"></i>
-                                <h3>
-                                    <a href="#">Buy ASIC and get connected instantly</a>
-                                </h3>
+                            <div class="card-wrapper flip-left">
+                                <div class="card-service">
+                                    <div class="front-service">
+                                        <i class="icon-services-asic icon"></i>
+                                        <strong>Buy ASIC and get connected instantly</strong>
+                                    </div>
+                                    <div class="back-service">
+                                        <p>
+                                            Incidents happen, the hardware is expensive and is used at the maximum of
+                                            its
+                                            capacity. Our insurance will protect you
+                                            from these risks and we will help you to exit if you decide so.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="item">
-                                <i class="icon-services-data-mining icon"></i>
-                                <h3>
-                                    <a href="#">Mining hosting</a>
-                                </h3>
+                            <div class="card-wrapper flip-left">
+                                <div class="card-service">
+                                    <div class="front-service">
+                                        <i class="icon-services-data-mining icon"></i>
+                                        <strong>Mining hosting</strong>
+                                    </div>
+                                    <div class="back-service">
+                                        <p>
+                                            Incidents happen, the hardware is expensive and is used at the maximum of
+                                            its
+                                            capacity. Our insurance will protect you
+                                            from these risks and we will help you to exit if you decide so.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="item">
-                                <i class="icon-services-cloud icon"></i>
-                                <h3>
-                                    <a href="#">Cloud mining</a>
-                                </h3>
+                            <div class="card-wrapper flip-left">
+                                <div class="card-service">
+                                    <div class="front-service">
+                                        <i class="icon-services-cloud icon"></i>
+                                        <strong>Cloud mining</strong>
+                                    </div>
+                                    <div class="back-service">
+                                        <p>
+                                            Incidents happen, the hardware is expensive and is used at the maximum of
+                                            its
+                                            capacity. Our insurance will protect you
+                                            from these risks and we will help you to exit if you decide so.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="item">
-                                <i class="icon-services-umbrella icon"></i>
-                                <h3>
-                                    <a href="#">Miner’s insurance and buy back program</a>
-                                </h3>
+                            <div class="card-wrapper flip-left">
+                                <div class="card-service">
+                                    <div class="front-service">
+                                        <i class="icon-services-umbrella icon"></i>
+                                        <strong>Miner’s insurance and buy back program</strong>
+                                    </div>
+                                    <div class="back-service">
+                                        <p>
+                                            Incidents happen, the hardware is expensive and is used at the maximum of
+                                            its
+                                            capacity. Our insurance will protect you
+                                            from these risks and we will help you to exit if you decide so.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="item">
-                                <i class="icon-services-headphone icon"></i>
-                                <h3>
-                                    <a href="#">Service and support</a>
-                                </h3>
+                            <div class="card-wrapper flip-left">
+                                <div class="card-service">
+                                    <div class="front-service">
+                                        <i class="icon-services-headphone icon"></i>
+                                        <strong>Service and support</strong>
+                                    </div>
+                                    <div class="back-service">
+                                        <p>
+                                            Incidents happen, the hardware is expensive and is used at the maximum of
+                                            its
+                                            capacity. Our insurance will protect you
+                                            from these risks and we will help you to exit if you decide so.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="item">
-                                <i class="icon-services-statistics icon"></i>
-                                <h3>
-                                    <a href="#">Simulation "what if"</a>
-                                </h3>
+                            <div class="card-wrapper flip-left">
+                                <div class="card-service">
+                                    <div class="front-service">
+                                        <i class="icon-services-statistics icon"></i>
+                                        <strong>Simulation "what if"</strong>
+                                    </div>
+                                    <div class="back-service">
+                                        <p>
+                                            Incidents happen, the hardware is expensive and is used at the maximum of
+                                            its
+                                            capacity. Our insurance will protect you
+                                            from these risks and we will help you to exit if you decide so.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="main-contact-form-holder service-form ">
+            <div class="main-contact-form-holder faq-form ">
                 <div class="container">
                     <h2>Any questions?</h2>
                     <form class="main-contact-form" action="#">
@@ -151,13 +229,13 @@
         </main>
         <footer class="footer">
             <div class="container footer-inner">
-                <div class="row-holder">
+                <div class="row-holder footer-holder">
                     <div class="col-2">
                         <a class="logo" href="#">
-                            <img src="/images/logo.svg" alt="Minery">
+                            <img src="/images/logo-footer.svg" alt="Minery">
                         </a>
-                        <span>&copy; 2021 Minery</span>
-                        <ul class="social">
+                        <span class="lg-hide">&copy; 2021 Minery</span>
+                        <ul class="social lg-hide">
                             <li><a href="#"><i class="icon-social-facebook icon"></i></a></li>
                             <li><a href="#"><i class="icon-social-medium icon"></i></a></li>
                         </ul>
@@ -167,7 +245,7 @@
                             <li><a href="#">Service</a></li>
                             <li><a href="#">Iron shop</a></li>
                             <li><a href="#">About company</a></li>
-                            <li><a href="#">About blockhain</a></li>
+                            <li><a href="#">About blockchain</a></li>
                         </ul>
                     </div>
                     <div class="col-3">
@@ -185,6 +263,7 @@
                                 <input class="btn" type="submit" value="SUBSCRIBE">
                             </div>
                         </form>
+                        <span class="lg-upper-hide">&copy; 2021 Minery</span>
                     </div>
                 </div>
             </div>

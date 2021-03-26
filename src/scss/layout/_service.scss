@@ -1,12 +1,36 @@
-.faq {
+.service {
     margin-top: 110px;
-    padding-bottom: 153px;
+    padding-bottom: 137px;
     background: url(../../images/service-bg.svg) no-repeat;
     background-size: cover;
     background-position: 0 0;
 
+    @include media ('<desktop') {
+        padding-bottom: 50px;
+    }
+
+    h2 {
+        @include media ('<desktop') {
+            margin-bottom: 32px;
+        }
+    }
+
+    @include media ('<desktop') {
+        margin-top: 42px;
+    }
+
+    @include media ('<tablet') {
+        margin-top: 42px;
+        background-position: 0 -200px;
+    }
+
     .item-holder {
         padding-bottom: 0;
+    }
+
+    strong {
+        text-align: center;
+        max-width: 60%;
     }
 }
 

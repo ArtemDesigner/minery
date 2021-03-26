@@ -8,6 +8,7 @@
 
     table {
         width: 100%;
+        margin-bottom: 36px;
     }
 
     thead {
@@ -32,6 +33,7 @@
             &:last-child {
                 border-bottom: none;
                 height: 60px;
+                vertical-align: bottom;
             }
         }
 
@@ -44,6 +46,11 @@
             color: #100F0F;
             font-weight: 700;
             text-align: right;
+        }
+
+        .price-name {
+            text-align-last: left;
+            color: #6F6767;
         }
     }
 
@@ -134,5 +141,15 @@
         background: url('../../images/btn-delete-bg.svg') no-repeat;
         background-size: contain;
         background-position: 0 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 16px 50px;
     }
 }

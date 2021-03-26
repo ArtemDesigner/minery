@@ -1,20 +1,35 @@
 <header class="header">
-    <div class="row-holder">
-        <div class="header-inner">
-            <div class="left">
-                <div class="burger" id="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav class="navigation" id="headerNav">
-                    <ul class="menu">
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Iron shop</a></li>
-                        <li><a href="#">About company</a></li>
-                        <li><a href="#">About blockhain</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Blog</a></li>
+    <div class="header-inner">
+        <div class="left">
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navigation" id="headerNav">
+                <ul class="menu">
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Iron shop</a></li>
+                    <li><a href="#">About company</a></li>
+                    <li><a href="#">About blockchain</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul class="header-social desktop-less-hide">
+                    <li><a href="#">
+                            <i class="icon-social-facebook icon"></i>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="icon-social-medium icon"></i>
+                        </a></li>
+                </ul>
+                <div class="list-holder desktop-hide">
+                    <ul class="language">
+                        <li class="has-drop" id="language-drop"><a>EN</a>
+                            <ul>
+                                <li><a href="#">RU</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="header-social">
                         <li><a href="#">
@@ -24,23 +39,26 @@
                                 <i class="icon-social-medium icon"></i>
                             </a></li>
                     </ul>
-                </nav>
-                <a class="logo" href="#">
-                    <img src="/images/logo.svg" alt="Minery">
-                </a>
-            </div>
-            <div class="right">
-                <a href="#">SIGN IN</a>
-                <a href="#" class="btn">SIGN UP</a>
-                <ul class="language">
-                    <li class="has-drop" id="language-drop"><a>EN</a>
-                        <ul>
-                            <li><a href="#">RU</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <a class="shop-cart" href="#"></a>
-            </div>
+                </div>
+            </nav>
+            <a class="logo" href="#">
+                <img src="/images/logo.svg" alt="Minery">
+            </a>
+        </div>
+        <div class="right">
+            <a class="desktop-less-hide" id='signInBtn' href="#">SIGN IN</a>
+            <a class="desktop-less-hide btn" id='signUpBtn' href="#">SIGN UP</a>
+            <a class="desktop-hide signInMob" href="#">
+                <i class="icon-signInMob"></i>
+            </a>
+            <ul class="language desktop-less-hide">
+                <li class="has-drop" id="language-drop"><a>EN</a>
+                    <ul>
+                        <li><a href="#">RU</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="shop-cart" href="#"></a>
         </div>
     </div>
 </header>

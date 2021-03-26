@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <div id="wrapper" class="wrapper">
         //= layout/header.html
         <main>
             <div class="cart-order">
@@ -15,18 +15,62 @@
                     <div class="row-holder">
                         <div class="col-1"></div>
                         <div class="col-5">
-
+                            <h4>Contact Information</h4>
+                            <form class="form-place-order" action="#">
+                                <div class="contact-info">
+                                    <input type="text" placeholder="Name">
+                                    <input type="tel" placeholder="Phone">
+                                    <input type="email" placeholder="E-mail">
+                                    <input type="text" placeholder="Adress">
+                                </div>
+                                <h4 class="payment-title">Payment method</h4>
+                                <div class="method-list">
+                                    <input type="radio" name="method" id="method1">
+                                    <label for="method1">Method 1</label>
+                                    <input type="radio" name="method" id="method2">
+                                    <label for="method2">Method 2</label>
+                                    <input type="radio" name="method" id="method3">
+                                    <label for="method3">Method 3</label>
+                                </div>
+                                <input class="btn" type="submit" value="CHECKOUT">
+                            </form>
                         </div>
                         <div class="col-1"></div>
-                        <div class="col-5">
-
+                        <div class="col-5 order-content">
+                            <h4>Order list</h4>
+                            <table>
+                                <tr>
+                                    <td>Bitmain Antminer S17+ 70TH/s</td>
+                                    <td class="tablet-hide">-</td>
+                                    <td>$2, 150 </td>
+                                </tr>
+                                <tr>
+                                    <td>Bitmain Antminer S17+ 70TH/s</td>
+                                    <td class="tablet-hide">-</td>
+                                    <td>$2, 150 </td>
+                                </tr>
+                                <tr class="tablet-hide">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Full price</td>
+                                    <td class="tablet-hide">-</td>
+                                    <td class="price">$4, 300</td>
+                                </tr>
+                            </table>
+                            <div class="row">
+                                <a class="prev-page" href="cart.html">&lt; Change</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        //= layout/footer.html
     </div>
+
+    //= layout/footer.html
 
     <script src="js/main.min.js"></script>
 </body>
