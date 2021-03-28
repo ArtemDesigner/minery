@@ -1,24 +1,207 @@
+.shop {
+    .modal {
+        display: none;
+        padding-top: 30px;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.3);
+        overflow: auto;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        @include media('<tablet') {
+            padding-top: 42px;
+            background: transparent;
+        }
+    }
+
+    .swiper-container {
+        max-width: 900px;
+
+        @include media('<tablet') {
+            max-width: 768px;
+        }
+    }
+
+    .compare-content-inner {
+        display: flex;
+    }
+
+    .product-wrapper {
+        padding: 0px 17px 36px 0;
+        color: #111111;
+        max-width: 306px;
+
+        @include media('<tablet') {
+            max-width: 140px;
+            padding-bottom: 12px;
+        }
+    }
+
+    .product {
+        position: relative;
+        border-right: 1px solid #c4c4c4;
+        padding: 0 15px 0 0;
+
+        img {
+            display: block;
+            width: 166px;
+            margin-bottom: 17px;
+
+            @include media('<tablet') {
+                width: 105px;
+                padding-top: 15px;
+                margin-bottom: 14px;
+            }
+        }
+
+        strong {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 26px;
+            max-width: 252px;
+            padding-top: 20px;
+
+            @include media('<desktop') {
+                margin-bottom: 18px;
+            }
+
+            @include media('<tablet') {
+                font-size: 16px;
+                max-width: 240px;
+                margin-bottom: 7px;
+                padding-top: 0;
+            }
+
+            @include media('<576px') {
+                max-width: 140px;
+            }
+        }
+
+        span {
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 500;
+
+            @include media('<tablet') {
+                margin-bottom: 8px;
+            }
+        }
+
+        .btn {
+            max-width: 155px;
+            padding: 15px 0;
+
+            @include media('<tablet') {
+                padding: 2px 0;
+                max-width: 140px;
+                margin-bottom: 12px;
+            }
+        }
+
+        .price-value {
+            padding-top: 22px;
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #121212;
+
+            @include media('<tablet') {
+                font-size: 24px;
+                padding-top: 0;
+                margin-bottom: 5px;
+            }
+        }
+
+        .icon {
+            font-size: 27px;
+
+            @include media('<tablet') {
+                font-size: 22px;
+            }
+        }
+
+        .delete {
+            position: absolute;
+            content: '';
+            top: 30px;
+            right: 30px;
+            background: url('../../images/btn-delete-bg.svg') no-repeat;
+            width: 21px;
+            height: 21px;
+            background-size: contain;
+            outline: none;
+            border: none;
+
+            @include media('<tablet') {
+                width: 19px;
+                height: 19px;
+                right: 4px;
+                top: 14px;
+            }
+        }
+
+        .characteristics {
+            color: #6F6767;
+            font-weight: 400;
+
+            @include media('<tablet') {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 .compare-content {
     display: flex;
     flex-flow: column;
-    align-items: center;
     background-color: #fefefe;
     margin: auto;
-    padding: 75px 0 85px;
+    padding: 60px 40px;
     width: 100%;
-    max-width: 816px;
+    max-width: 1240px;
     border-radius: 11px;
     position: relative;
 
+    @include media('<tablet') {
+        padding: 40px 20px 20px;
+    }
+
+    &::before {
+        // content: '';
+        // position: absolute;
+        // background: #F5F5F5;
+        // width: 30%;
+        // height: 100%;
+        // z-index: 0;
+        // left: 0;
+        // top: 0;
+    }
+
+    h3 {
+        @include media('<tablet') {
+            font-size: 32px;
+        }
+    }
+
     .close {
         position: absolute;
-        top: 15px;
-        right: 20px;
+        top: 25px;
+        right: 25px;
         color: #3F3F3F;
         width: 32px;
         height: 32px;
         background: url('../../images/modal-close.svg') no-repeat;
         background-size: contain;
+
+        @include media('<tablet') {
+            width: 24px;
+            height: 24px;
+            top: 50px;
+            right: 24px;
+        }
     }
 
     .close:hover,
@@ -63,13 +246,26 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        /*   width:25px; */
         background: green;
     }
 }
 
-.compare-table {
-    // width: 100%;
-    // display: block;
-    // overflow-x: auto;
+.compare-characteristics {
+    padding-top: 205px;
+    color: #6F6767;
+
+    strong {
+        display: block;
+        margin-bottom: 54px;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .price {
+        padding-top: 30px;
+        font-size: 20px;
+    }
 }

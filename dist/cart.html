@@ -25,12 +25,12 @@
                     </div>
                     <nav class="navigation" id="headerNav">
                         <ul class="menu">
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Iron shop</a></li>
-                            <li><a href="#">About company</a></li>
-                            <li><a href="#">About blockchain</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="service.html">Service</a></li>
+                            <li><a href="shop.html">Iron shop</a></li>
+                            <li><a href="about-company.html">About company</a></li>
+                            <li><a href="about-blockchain.html">About blockchain</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                         </ul>
                         <ul class="header-social desktop-less-hide">
                             <li><a href="#">
@@ -58,14 +58,14 @@
                             </ul>
                         </div>
                     </nav>
-                    <a class="logo" href="#">
+                    <a class="logo" href="index.html">
                         <img src="/images/logo.svg" alt="Minery">
                     </a>
                 </div>
                 <div class="right">
-                    <a class="desktop-less-hide" id='signInBtn' href="#">SIGN IN</a>
-                    <a class="desktop-less-hide btn" id='signUpBtn' href="#">SIGN UP</a>
-                    <a class="desktop-hide signInMob" href="#">
+                    <a class="desktop-less-hide" href="signin.html">SIGN IN</a>
+                    <a class="desktop-less-hide btn" href="signup.html">SIGN UP</a>
+                    <a class="desktop-hide signInMob" href="signin.html">
                         <i class="icon-signInMob"></i>
                     </a>
                     <ul class="language desktop-less-hide">
@@ -75,7 +75,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a class="shop-cart" href="#"></a>
+                    <a class="shop-cart" href="cart.html"></a>
                 </div>
             </div>
         </header>
@@ -86,7 +86,7 @@
                     <div class="row-holder">
                         <div class="col-1"></div>
                         <div class="col-9">
-                            <table>
+                            <table class="sm-hide">
                                 <thead>
                                     <tr>
                                         <th class="name">Product</th>
@@ -138,29 +138,74 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <table class="table-mob">
+                                <tr>
+                                    <td colspan="3">
+                                        <div class="product">
+                                            <img src="images/cart.jpg" alt="image description">
+                                            Bitmain Antminer S17+
+                                            70TH/s
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Quantity</td>
+                                    <td>
+                                        <button class="delete">Delete</button>
+                                    </td>
+                                    <td>
+                                        <div class="quantity-block">
+                                            <button class="quantity-arrow-minus">
+                                                - </button>
+                                            <input class="quantity-num" type="number" value="1" />
+                                            <button class="quantity-arrow-plus">
+                                                + </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Price</td>
+                                    <td></td>
+                                    <td class="price-item">$2, 150</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <div class="product">
+                                            <img src="images/cart.jpg" alt="image description">
+                                            Bitmain Antminer S17+
+                                            70TH/s
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Quantity</td>
+                                    <td>
+                                        <button class="delete">Delete</button>
+                                    </td>
+                                    <td>
+                                        <div class="quantity-block">
+                                            <button class="quantity-arrow-minus">
+                                                - </button>
+                                            <input class="quantity-num" type="number" value="1" />
+                                            <button class="quantity-arrow-plus">
+                                                + </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Price</td>
+                                    <td></td>
+                                    <td class="price-item">$2, 150</td>
+                                </tr>
+                                <tr>
+                                    <td class="price-name">Full Price</td>
+                                    <td class="price" colspan="2">$4, 300</td>
+                                </tr>
+                            </table>
                             <div class="row">
-                                <a id="signLogBtn" class="btn" href="#">PLACE AN ORDER</a>
+                                <a class="btn" href="#">PLACE AN ORDER</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="signLog" class="modal">
-                    <div class="modal-content">
-                        <span class="close"></span>
-                        <a class="logo" href="#">
-                            <img src="/images/logo.svg" alt="Minery">
-                        </a>
-                        <h3>Log in to place an order</h3>
-                        <p>Don't have account? <a href="#">Sign up</a></p>
-                        <form class="form-sign" action="#">
-                            <input class="text" type="email" placeholder="E-mail">
-                            <div class="row">
-                                <div class="eye"></div>
-                                <input class="password" type="password" placeholder="Password">
-                            </div>
-                            <a class="reset" href="#">Forgot Password?</a>
-                            <input class="btn" type="submit" value="LOG IN">
-                        </form>
                     </div>
                 </div>
             </div>

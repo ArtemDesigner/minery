@@ -49,7 +49,6 @@ for (i = 0; i < acc.length; i++) {
 // });
 
 // MODAL shop compare
-$("#compareModal").css("display", "block");
 
 $("#compareBtn").on("click", function () {
   $("#compareModal").css("display", "block");
@@ -82,12 +81,50 @@ new Swiper(".swiper-container", {
   scrollbar: {
     el: ".swiper-scrollbar",
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 5,
+    },
+  },
 });
 
 new Swiper("#swiper-service", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 2,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      scrollbar: {
+        hide: false,
+      },
+    },
+    1024: {
+      draggable: false,
+      scrollbar: {
+        hide: true,
+      },
+    },
+    1240: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+new Swiper("#swiper-compare", {
+  direction: "horizontal",
+  // loop: true,
+  slidesPerView: 1,
   scrollbar: {
     el: ".swiper-scrollbar",
   },

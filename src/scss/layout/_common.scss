@@ -5,7 +5,6 @@
 .container {
     max-width: $container-max-width;
     margin: 0 auto;
-    // padding: 0 10px;
 
     @include media('<1240px') {
         padding: 0 10px;
@@ -88,6 +87,18 @@ p {
 
 .tablet-show {
     @include media('>=tablet') {
+        display: block !important;
+    }
+}
+
+.sm-hide {
+    @include media('<576px') {
+        display: none !important;
+    }
+}
+
+.sm-show {
+    @include media('>=576px') {
         display: block !important;
     }
 }

@@ -4,6 +4,10 @@
     background-size: contain;
     background-position: 0 -5vw;
 
+    @include media('<tablet') {
+        padding-top: 42px;
+    }
+
     .content-wrapper {
         background: url('../../images/about-blockhain-content-bg.svg') no-repeat;
         background-size: contain;
@@ -12,11 +16,39 @@
 
     .about-holder {
         padding-bottom: 72px;
-    }
 
-    .about {
-        h2 {
-            margin-bottom: 55px;
+        @include media('<tablet') {
+            padding-bottom: 54px;
+        }
+
+        img {
+            @include media('<tablet') {
+                max-width: 85%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .about {
+            h2 {
+                margin-bottom: 55px;
+
+                @include media('<tablet') {
+                    margin-bottom: 22px;
+                }
+            }
+
+
+        }
+
+        p {
+            &:last-child {
+                @include media('<tablet') {
+                    margin-bottom: 0;
+                }
+            }
+
+
         }
     }
 
@@ -26,42 +58,101 @@
 
     h4 {
         margin-bottom: 24px;
+
+        @include media('<tablet') {
+            margin-bottom: 15px;
+        }
     }
 
     p {
         margin-bottom: 26px;
         max-width: 510px;
+
+        @include media('<tablet') {
+            margin-bottom: 21px;
+        }
     }
 
     .cryptocurrencies-holder {
         margin-bottom: 135px;
 
+        @include media('<desktop') {
+            margin-bottom: 58px;
+        }
+
         h2 {
             margin-bottom: 38px;
+
+            @include media('<tablet') {
+                margin-bottom: 16px;
+            }
         }
 
         p {
             margin-bottom: 75px;
             max-width: 45%;
+
+            @include media('<tablet') {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
         }
     }
 
     .mining {
         margin-bottom: 93px;
 
+        @include media('<desktop') {
+            margin-bottom: 65px;
+        }
+
         h2 {
             margin-bottom: 48px;
+
+            @include media('<desktop') {
+                margin-bottom: 15px;
+            }
+        }
+
+        p {
+            &:last-child {
+                @include media('<desktop') {
+                    margin-bottom: 30px;
+                }
+            }
         }
     }
 
     .contract {
         margin-bottom: 72px;
+
+        @include media('<desktop') {
+            margin-bottom: 0px;
+        }
+
+        p {
+            &:last-child {
+                @include media('<desktop') {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
     }
 
+    .contract-content {
+        @include media('<tablet') {
+            order: -1;
+        }
+    }
 }
 
 .blockchain-form {
     padding-top: 45px;
+
+    @include media('<desktop') {
+        padding-top: 35px;
+    }
 }
 
 .crypto-list {
@@ -70,6 +161,10 @@
         flex-flow: column;
         align-items: center;
         padding-bottom: 84px;
+
+        @include media('<tablet') {
+            padding-bottom: 40px;
+        }
 
         span {
             color: #737373;
@@ -80,6 +175,10 @@
         max-width: 100px;
         border-radius: 50%;
         margin-bottom: 20px;
+
+        @include media('<tablet') {
+            max-width: 59px;
+        }
     }
 }
 

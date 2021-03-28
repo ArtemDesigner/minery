@@ -13,6 +13,11 @@
         margin-bottom: 10px;
         font-size: 24px;
         color: #100F0F;
+
+        @include media('<desktop') {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
     }
 
     span,
@@ -23,31 +28,96 @@
 
     .title {
         margin-bottom: 45px;
+
+        @include media('<desktop') {
+            margin-bottom: 14px;
+        }
+
+        @include media('<tablet') {
+            text-align: center;
+        }
+    }
+
+    .last-section {
+        padding-bottom: 150px;
+    }
+
+    .more {
+        display: none;
+        font-size: 20px;
+        color: $green-dark;
+        margin-bottom: 0;
+
+        @include media('<desktop') {
+            display: block;
+        }
     }
 }
 
 .company-holder {
-    padding-bottom: 180px;
+    padding-top: 110px;
+    padding-bottom: 195px;
     background: url('../../images/main-top-bg.svg') no-repeat;
     background-size: cover;
     background-position: 0 -15vw;
 
+    @include media('<desktop') {
+        padding-top: 40px;
+        padding-bottom: 92px;
+    }
+
     h2 {
-        padding-top: 100px;
+        @include media('<desktop') {
+            max-width: 260px;
+        }
     }
 
     img {
         &:first-child {
             margin-top: 25px;
+
+            @include media('<desktop') {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .inner-image {
+        @include media('<tablet') {
+            order: 1;
         }
     }
 
     .inner-content {
-        padding-top: 85px;
+        padding-top: 140px;
+
+        @include media('<desktop') {
+            padding-top: 47px;
+        }
+
+        p {
+            @include media('<desktop') {
+                margin-bottom: 20px;
+            }
+
+            &:last-child {
+                @include media('<desktop') {
+                    margin-bottom: 45px;
+                }
+            }
+        }
     }
 
     p {
         margin-bottom: 40px;
+
+        &:last-child {
+            @include media('<desktop') {
+                margin-bottom: 0;
+            }
+
+        }
+
     }
 
     figcaption {
@@ -59,7 +129,17 @@
     background: url('../../images/company-team-bg.svg') no-repeat;
     background-size: contain;
     background-position: 0 50%;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
+
+    @include media('<desktop') {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        @include media('<desktop') {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .card {
@@ -67,6 +147,22 @@
     position: relative;
     min-height: 470px;
     margin-bottom: 20px;
+
+    @include media('<tablet') {
+        min-width: 320px;
+        min-height: 388px
+    }
+
+    @include media('<576px') {
+        min-width: 280px;
+    }
+
+    span {
+        @include media('<desktop') {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    }
 
     ::-webkit-scrollbar {
         width: 3px;
@@ -79,6 +175,53 @@
     ::-webkit-scrollbar-thumb {
         background: $green-dark;
         border-radius: 10px;
+    }
+}
+
+.card-lg {
+    min-height: 540px;
+
+    @include media('<tablet') {
+        min-height: 435px
+    }
+
+    .back {
+        max-height: 540px;
+
+        @include media('<desktop') {
+            max-height: 425px
+        }
+
+        @include media('<tablet') {
+            max-height: 435px
+        }
+    }
+}
+
+.card-sm {
+    min-height: 430px;
+
+    @include media('<tablet') {
+        min-height: 355px
+    }
+
+    .back {
+        max-height: 430px;
+
+        @include media('<tablet') {
+            max-height: 380px
+        }
+
+        @include media('<576px') {
+            max-height: 346px;
+        }
+    }
+}
+
+.center {
+    @include media('<tablet') {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -101,17 +244,35 @@
     border-bottom-right-radius: 11px;
     padding: 25px 32px 40px;
     height: 100%;
+
+    @include media('<desktop') {
+        padding: 18px 22px;
+    }
 }
 
-.card-side.back {
+.back {
     padding: 36px 32px 30px;
     transform: rotateY(-180deg);
     border: 1px solid $green-dark;
-    max-height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
+    max-height: 470px;
+
+    @include media('<desktop') {
+        max-height: 388px;
+    }
+
+    @include media('<576px') {
+        max-height: 345px;
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
-.card-side.front {
+.front {
     max-height: 100%;
     display: flex;
     flex-direction: column;
@@ -126,15 +287,19 @@
 }
 
 .members {
-    margin-bottom: 90px;
+    margin-bottom: 65px;
+
+    @include media('<desktop') {
+        margin-bottom: 30px;
+    }
 
     .card {
-        min-height: 540px;
+        // min-height: 540px;
     }
 }
 
 .advisors {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     position: relative;
 
     &::before {
@@ -163,7 +328,13 @@
     }
 
     .card {
-        min-height: 430px;
+        @include media('<tablet') {
+            min-height: 380px;
+        }
+
+        @include media('<576px') {
+            min-height: 345px;
+        }
     }
 
     .card-bottom {
@@ -172,13 +343,31 @@
 }
 
 .ambassadors {
-    padding-bottom: 185px;
+    padding-bottom: 75px;
+
+    &:last-of-type {
+        padding-bottom: 175px;
+    }
 
     .card {
-        min-height: 430px;
+        @include media('<tablet') {
+            min-height: 380px;
+        }
+
+        @include media('<576px') {
+            min-height: 346px;
+        }
     }
 
     .card-bottom {
         padding: 25px 32px 28px;
+    }
+}
+
+.company-form {
+    .row-holder {
+        &:last-child {
+            padding-bottom: 38px;
+        }
     }
 }

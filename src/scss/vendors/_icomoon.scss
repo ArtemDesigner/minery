@@ -22,6 +22,11 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-shop-buy:before {
+    content: "\e90d";
+    color: #fff;
+}
+
 .icon-signInMob:before {
     content: "\e90c";
 }
