@@ -119,11 +119,11 @@
     }
 
     .item {
-        padding-left: 80px;
+        padding-top: 80px;
         position: relative;
 
         @include media('<desktop') {
-            padding-left: 50px;
+            padding-top: 50px;
         }
 
         h4 {
@@ -211,7 +211,7 @@
 
             &:hover {
                 .card-service {
-                    transform: rotateY(-540deg);
+                    transform: rotateY(-180deg);
                 }
             }
         }
@@ -230,7 +230,7 @@
     .card-service {
         position: relative;
         cursor: pointer;
-        transition-duration: .6s;
+        transition-duration: $animation-speed;
         transition-timing-function: ease-in-out;
         transform-style: preserve-3d;
         background: $white;
@@ -503,10 +503,9 @@
 
     input[type="submit"] {
         display: block;
-        padding: 16px 0;
+        padding: 14px 0;
         font-size: 22px;
         border-radius: 174px;
-        border: none;
         font-weight: 700;
         margin-bottom: 28px;
         margin-left: 18px;

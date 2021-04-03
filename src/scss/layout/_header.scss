@@ -15,10 +15,19 @@
     }
 
     .logo {
+        display: flex;
+
         @include media('<desktop') {
-            max-width: 92px;
+            // max-width: 92px;
             display: flex;
-            align-items: flex-end;
+        }
+
+        img {
+            height: 31px;
+
+            @include media('<desktop') {
+                height: 20px;
+            }
         }
     }
 
@@ -39,7 +48,7 @@
     }
 
     .btn {
-        padding: 10px 42px;
+        padding: 8px 42px;
     }
 
     .list-holder {
@@ -53,15 +62,15 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 28px;
+    min-height: 69px;
 
     @include media('<desktop') {
-        height: 42px;
+        min-height: 42px;
         padding-top: 0;
         margin-left: initial;
         margin-right: initial;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
     }
 }
 
@@ -99,7 +108,7 @@
 }
 
 .burger-active span:nth-child(1) {
-    transform: rotate(45deg) translate(0, -2px);
+    transform: rotate(45deg) translate(3px, -2px);
 
     @include media ('<desktop') {
         transform: rotate(45deg) translate(1px, -1px);
@@ -111,7 +120,7 @@
 }
 
 .burger-active span:nth-child(3) {
-    transform: rotate(-45deg) translate(1px, 0);
+    transform: rotate(-45deg) translate(0px, 1px);
 
     @include media ('<desktop') {
         transform: rotate(-45deg) translate(1px, 0);

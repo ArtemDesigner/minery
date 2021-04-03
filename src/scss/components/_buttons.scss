@@ -8,10 +8,13 @@
 		border $animation-speed ease-in-out;
 	border-radius: 54px;
 	font-weight: 700;
+	border: 3px solid transparent;
 
 	&:hover,
 	&:focus {
-		background: linear-gradient(91.32deg, #35B2F8 13.16%, #0C8ADC 96.44%);
+		background: $white;
+		border: 3px solid $green-dark;
+		color: #000;
 	}
 
 	&-light {
@@ -27,7 +30,7 @@
 
 		&:hover,
 		&:focus {
-			background: linear-gradient(91.32deg, #35B2F8 13.16%, #0C8ADC 96.44%);
+			background: $green-dark;
 			border: 3px solid transparent;
 			color: $white;
 		}
