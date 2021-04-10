@@ -1,9 +1,14 @@
 var click = document.getElementById("burger");
 var headerNav = document.getElementById("headerNav");
 
+$("main").before('<div class="overlay"></div>');
+
 click.addEventListener("click", function () {
   click.classList.toggle("burger-active");
   headerNav.classList.toggle("menu-active");
+  $("body").find(".overlay").toggleClass("overlay--active");
+  $(".header").toggleClass("fixed");
+  $("main").toggleClass("is-header-fixed");
 });
 
 $("#language-drop").on("click", function () {
